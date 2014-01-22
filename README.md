@@ -1,4 +1,4 @@
 gocoin-js-extended
 ==================
 
-Extended version of GoCoin-JS
+Extended version of GoCoin-JS.
