@@ -1,5 +1,3 @@
-util.coffee
-
 # GoCoin Utilities Class
 #
 class Util
