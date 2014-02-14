@@ -11,6 +11,8 @@ class Client_Ext extends Client
     @user = @api.user
     @merchant = @api.merchant
     @merchantpayoutaddresses = @api.merchantpayoutaddresses
+    @currency_conversions = @api.currency_conversions
+    @payouts = @api.payouts
     @invoices = @api.invoices
     @accounts = @api.accounts
     @apps = @api.apps
