@@ -1,5 +1,8 @@
 ###Changelog
 
+#### v0.1.10
+Pushes dependency version (GoCoin JS 0.3.6)
+
 #### v0.1.8
 Adds fulfill methods to Admin class (for currency conversions and payment)
 
