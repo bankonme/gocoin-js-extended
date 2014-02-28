@@ -1,5 +1,8 @@
 ###Changelog
 
+#### v0.1.12
+Pushes dependency version (GoCoin JS 0.3.8)
+
 #### v0.1.10
 Pushes dependency version (GoCoin JS 0.3.6)
 
