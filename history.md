@@ -1,5 +1,8 @@
 ###Changelog
 
+#### v0.1.14
+adds PayoutAccounts Class
+
 #### v0.1.12
 Pushes dependency version (GoCoin JS 0.3.8)
 
