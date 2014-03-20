@@ -51,7 +51,7 @@ class Admin
     options = {}
     @api.request(route, options, callback)
 
-  getMerchantUser: (id, callback) ->
+  getMerchantUsers: (id, callback) ->
     @api.client.logger.debug "MerchantUsers::get called."
     route = "/merchants/#{id}/users"
     options = {}
@@ -59,9 +59,10 @@ class Admin
 
   addMerchantUser: (params, callback) ->
     @api.client.logger.debug "MerchantUsers::put called."
-    route = "/merchants/#{params.mid}/users/#{params.uid}"
+    route = "/merchants/#{params.mid}/users"
     options =
-      method: 'PUT'
+      method: 'POST'
+      body: params.data
     @api.request(route, options, callback)
 
   deleteMerchantUser: (params, callback) ->

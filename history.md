@@ -1,5 +1,8 @@
 ###Changelog
 
+#### v0.1.16
+Adjust merchantUser method to POST for creation
+
 #### v0.1.14
 adds PayoutAccounts Class
 
