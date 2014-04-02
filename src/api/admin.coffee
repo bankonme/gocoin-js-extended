@@ -72,13 +72,6 @@ class Admin
       method: 'DELETE'
     @api.request(route, options, callback)
 
-  fulfillCurrencyConversion: (params, callback) ->
-    @api.client.logger.debug "CurrencyConversions::fulfill called."
-    route = "/currency_conversion/#{params.conversion_id}/fulfill"
-    options =
-      method: 'PATCH'
-    @api.request(route, options, callback)
-
   fulfillPayout: (params, callback) ->
     @api.client.logger.debug "Payouts::fulfill called."
     route = "/payouts/#{params.conversion_id}/fulfill"
