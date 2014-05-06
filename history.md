@@ -1,5 +1,8 @@
 ###Changelog
 
+#### v0.1.20
+Add Terms and KYC docs methods
+
 #### v0.1.18
 Remove currency conversions
 
