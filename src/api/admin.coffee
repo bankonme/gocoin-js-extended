@@ -51,6 +51,19 @@ class Admin
     options = {}
     @api.request(route, options, callback)
 
+  getMerchantTerms: (id, callback) ->
+    @api.client.logger.debug "Merchant::list called."
+    route = "/merchants/#{id}/terms_of_service"
+    options = {}
+    @api.request(route, options, callback)
+
+  acceptMerchantTerms: (id, callback) ->
+    @api.client.logger.debug "MerchantTerms::get called."
+    route = "/merchants/#{id}/accept_terms_of_service"
+    options = 
+      method: 'PUT'
+    @api.request(route, options, callback)
+
   getMerchantUsers: (id, callback) ->
     @api.client.logger.debug "MerchantUsers::get called."
     route = "/merchants/#{id}/users"
@@ -77,6 +90,12 @@ class Admin
     route = "/payouts/#{params.conversion_id}/fulfill"
     options =
       method: 'PATCH'
+    @api.request(route, options, callback)
+
+  getKycDocs: (id, callback) ->
+    @api.client.logger.debug "KycDocs::list called."
+    route = "/merchants/#{id}/kyc_documents"
+    options = {}
     @api.request(route, options, callback)
 
 module.exports = Admin
