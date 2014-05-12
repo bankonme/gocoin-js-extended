@@ -57,11 +57,12 @@ class Admin
     options = {}
     @api.request(route, options, callback)
 
-  acceptMerchantTerms: (id, callback) ->
+  acceptMerchantTerms: (params, callback) ->
     @api.client.logger.debug "MerchantTerms::get called."
-    route = "/merchants/#{id}/accept_terms_of_service"
+    route = "/merchants/#{params.id}/accept_terms_of_service"
     options = 
       method: 'PUT'
+      body: params.data
     @api.request(route, options, callback)
 
   getMerchantUsers: (id, callback) ->

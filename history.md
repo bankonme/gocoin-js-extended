@@ -1,5 +1,8 @@
 ###Changelog
 
+#### v0.1.22
+Update setTerms method to include body
+
 #### v0.1.20
 Add Terms and KYC docs methods
 
