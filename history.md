@@ -1,5 +1,8 @@
 ###Changelog
 
+#### v0.1.24
+Include payout accounts confirm method
+
 #### v0.1.22
 Update setTerms method to include body
 
