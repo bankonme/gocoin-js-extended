@@ -1,5 +1,8 @@
 ###Changelog
 
+#### v0.1.26
+Pushes dependency version (GoCoin JS 0.3.16)
+
 #### v0.1.24
 Include payout accounts confirm method
 
