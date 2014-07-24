@@ -12,8 +12,8 @@ class Apps
       body: params
     @api.request(route, options, callback)
 
-  create_code: (params, callback) ->
-    @api.client.logger.debug "Apps::create_code called."
+  authorizationCode: (params, callback) ->
+    @api.client.logger.debug "Apps::authorizationCode called."
     route = '/oauth/authorize'
     options =
       method: 'POST'
@@ -27,8 +27,8 @@ class Apps
       method: 'DELETE'
     @api.request(route, options, callback)
 
-  delete_authorized: (id, callback) ->
-    @api.client.logger.debug "Apps::delete_authorized called."
+  deleteAuthorized: (id, callback) ->
+    @api.client.logger.debug "Apps::deleteAuthorized called."
     route = "/oauth/authorized_applications/#{id}"
     options = 
       method: 'DELETE'
@@ -46,8 +46,8 @@ class Apps
     options = {}
     @api.request(route, options, callback)
 
-  list_authorized: (id, callback) ->
-    @api.client.logger.debug "Apps::list_authorized called."
+  listAuthorized: (id, callback) ->
+    @api.client.logger.debug "Apps::listAuthorized called."
     route = "/users/#{id}/authorized_applications";
     options = {}
     @api.request(route, options, callback)
@@ -60,16 +60,17 @@ class Apps
       body: params.data
     @api.request(route, options, callback)
 
-  new_secret: (id, callback) ->
-    @api.client.logger.debug "Apps::new_secret called."
+  newSecret: (id, callback) ->
+    @api.client.logger.debug "Apps::newSecret called."
     route = "/oauth/applications/#{id}/request_new_secret"
     options = 
       method: 'POST'
     @api.request(route, options, callback)
 
-  get_by_uid: (uid, callback) ->
-    @api.client.logger.debug "Apps::get_by_uid called."
-    route = "/oauth/applications/uid/#{uid}"
+  #does not require an access token, uses raw_request to bypass
+  getByClientID: (id, callback) ->
+    @api.client.logger.debug "Apps::getByClientID called."
+    route = "/oauth/applications/uid/#{id}"
     config =
       host: @api.client.options.host
       path: "#{@api.client.options.path}/#{@api.client.options.api_version}#{route}"

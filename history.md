@@ -1,5 +1,17 @@
 ###Changelog
 
+#### v0.2.0
+Pushes dependency version (GoCoin JS 0.4.0)
+Remove Admin::fulfillPayout
+Change input params for Admin::addMerchantUser params.mid -> params.merchant_id
+Change input params for Admin::deleteMerchantUser params.mid -> params.merchant_id, params.uid -> params.user_id
+Rename Apps::create_code -> Apps::authorizationCode
+Rename Apps::delete_authorized -> Apps::deleteAuthorized
+Rename Apps::list_authorized -> Apps::listAuthorized
+Rename Apps::new_secret -> Apps::new_secret
+Rename Apps::get_by_uid -> Apps::getByClientID
+
+
 #### v0.1.26
 Pushes dependency version (GoCoin JS 0.3.16)
 
