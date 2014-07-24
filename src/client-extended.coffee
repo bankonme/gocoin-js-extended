@@ -8,8 +8,8 @@ class Client_Ext extends Client
     @logger.debug 'Adding extension shortcut methods'
     @api = new Api_Ext(@)
 
-    @user = @api.user
-    @merchant = @api.merchant
+    @users = @api.users
+    @merchants = @api.merchants
     @payout_accounts = @api.payout_accounts
     @payouts = @api.payouts
     @invoices = @api.invoices
