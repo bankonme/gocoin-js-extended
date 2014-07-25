@@ -73,7 +73,7 @@ class Admin
 
   addMerchantUser: (params, callback) ->
     @api.client.logger.debug "MerchantUsers::put called."
-    route = "/merchants/#{params.mid}/users"
+    route = "/merchants/#{params.merchant_id}/users"
     options =
       method: 'POST'
       body: params.data
@@ -81,16 +81,9 @@ class Admin
 
   deleteMerchantUser: (params, callback) ->
     @api.client.logger.debug "MerchantUsers::delete called."
-    route = "/merchants/#{params.mid}/users/#{params.uid}"
+    route = "/merchants/#{params.merchant_id}/users/#{params.user_id}"
     options = 
       method: 'DELETE'
-    @api.request(route, options, callback)
-
-  fulfillPayout: (params, callback) ->
-    @api.client.logger.debug "Payouts::fulfill called."
-    route = "/payouts/#{params.conversion_id}/fulfill"
-    options =
-      method: 'PATCH'
     @api.request(route, options, callback)
 
   getKycDocs: (id, callback) ->
