@@ -92,4 +92,10 @@ class Admin
     options = {}
     @api.request(route, options, callback)
 
+  getMerchantOnboardingStatus: (id, callback) ->
+    @api.client.logger.debug "Merchant::getOnboardingStatus called."
+    route = "/merchants/#{id}/onboarding_status"
+    options = {}
+    @api.request(route, options, callback)
+
 module.exports = Admin

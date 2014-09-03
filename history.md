@@ -1,5 +1,8 @@
 ###Changelog
 
+#### v0.2.2
+Adds Onboarding Status Route (Merchant Account Completeness)
+
 #### v0.2.0
 Pushes dependency version (GoCoin JS 0.4.0)
 Remove Admin::fulfillPayout
