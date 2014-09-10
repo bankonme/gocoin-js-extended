@@ -1,5 +1,8 @@
 ###Changelog
 
+#### v0.2.5
+Partial release to up internal version of GoCoin-JS
+
 #### v0.2.4
 Adds Child Merchants list/search
 Ups GoCoin JS dependency to 0.4.2

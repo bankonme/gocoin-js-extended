@@ -1,6 +1,6 @@
 {
   "description": "An Extended Version of GoCoin's JavaScript library.",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "name": "gocoin-extended",
   "author": {
     "name": "GoCoin"
@@ -26,7 +26,7 @@
   "dependencies": {
     "underscore": "1.6.0",
     "winston": "0.7.3",
-    "gocoin": "0.4.0"
+    "gocoin": "0.4.2"
   },
   "devDependencies": {
     "coffee-script": "1.7.1",
