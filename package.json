@@ -1,6 +1,6 @@
 {
   "description": "An Extended Version of GoCoin's JavaScript library.",
-  "version": "0.2.2",
+  "version": "0.2.4",
   "name": "gocoin-extended",
   "author": {
     "name": "GoCoin"

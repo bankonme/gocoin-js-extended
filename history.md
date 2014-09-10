@@ -1,5 +1,9 @@
 ###Changelog
 
+#### v0.2.4
+Adds Child Merchants list/search
+Ups GoCoin JS dependency to 0.4.2
+
 #### v0.2.2
 Adds Onboarding Status Route (Merchant Account Completeness)
 

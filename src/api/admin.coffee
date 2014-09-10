@@ -1,5 +1,7 @@
 # GoCoin Admin Class
 #
+querystring = require 'querystring'
+
 class Admin
   constructor: (@api) ->
 
@@ -48,6 +50,13 @@ class Admin
   listMerchants: (callback) ->
     @api.client.logger.debug "Merchant::list called."
     route = '/merchants'
+    options = {}
+    @api.request(route, options, callback)
+
+  listChildMerchants: (params, callback) ->
+    @api.client.logger.debug "Merchant::list called."
+    query = querystring.stringify params.data
+    route = "/merchants/#{params.id}/children?#{query}"
     options = {}
     @api.request(route, options, callback)
 
