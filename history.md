@@ -1,5 +1,8 @@
 ###Changelog
 
+#### v0.2.6
+Partial release to up internal version of GoCoin-JS
+
 #### v0.2.5
 Partial release to up internal version of GoCoin-JS
 
