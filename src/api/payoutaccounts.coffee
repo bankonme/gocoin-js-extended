@@ -32,4 +32,18 @@ class PayoutAccounts
       body: params.data
     @api.request(route, options, callback)
 
+  setAsPrimary: (id, callback) ->
+    @api.client.logger.debug "PayoutAccounts::setAsPrimary called."
+    route = "/payout_accounts/#{id}/set_as_primary"
+    options =
+      method: 'PUT'
+    @api.request(route, options, callback)
+
+  sendConfirmationEmail: (id, callback) ->
+    @api.client.logger.debug "PayoutAccounts::setAsPrimary called."
+    route = "/payout_accounts/#{id}/request_new_confirmation_email"
+    options =
+      method: 'POST'
+    @api.request(route, options, callback)
+
 module.exports = PayoutAccounts

@@ -1,5 +1,10 @@
 ###Changelog
 
+#### v0.2.8
+Dev Release
+add PayoutAccounts::setAsPrimary
+add PayoutAccounts::sendConfirmationEmail
+
 #### v0.2.6
 Partial release to up internal version of GoCoin-JS
 
